@@ -1,0 +1,21 @@
+{
+  "name": "expenses-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "server": "npm run watch --prefix backend",
+    "client": "npm run start --prefix frontend",
+    "dev": "concurrently --kill-others \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.5.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express-async-handler": "^1.2.0"
+  }
+}
